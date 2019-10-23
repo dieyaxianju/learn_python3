@@ -1,0 +1,41 @@
+第41节-43
+API:application progrmming interface应用程序可编程接口
+两个不同事物之间进行适配的一种工具、规范和协议
+
+接口是函数 ，也可以是类
+不是所有的函数是接口，因为函数可以是私有函数，不可以被外部调用
+
+
+http  websocket webservice
+
+http分为三个部分
+一、请求首行
+    a.请求网址[url]  域名地址
+    b.请求方法
+      get
+      post
+      delete
+      option
+      head
+
+  http是基于tcp/IP设计出来的
+  （一）域名跟ip地址的区别
+       域名更好记忆
+       映射IP地址
+
+     DNS解析：域名解析成ip地址
+     为啥需要端口号：服务多需要指明哪个端口
+   （二）get与post区别
+   get表示获取资源，post表示创建资源
+   get没有请求体 post有请求体
+   get请求参数放在url里，以？key1=value1&key2=value2(查询字符串)的形式，post不仅可以查询字符串，而且可以放在请求体里面
+   get没有post安全，放在url更容易暴露
+二、请求头
+body参数方式  Content-Type
+Text           text/plain
+Form           application/x-www-form-uriencoded
+JSON            application/json
+File           不确定
+
+三、请求体
+
