@@ -2,15 +2,15 @@
 <html lang="zh-CN">
 <head>
 <!--<link>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Title</title>-->
-<!--    <link-->
-<!--    rel="stylesheet"-->
-<!--    type="text/css"-->
-<!--    href="{{ url_for('static', filename='hello.css') }}"/>-->
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ url_for('static', filename='static.css') }}"/>
 </head>
 <body>
-    <h1>upload file test</h1>
+    <h1>第一个上传文件功能</h1>
     <form action="{{ url_for('upload_file_test') }}" method="post" enctype="multipart/form-data">
     <input type="file" name="fileupload" />
         <input type="submit" value="上传文件" />

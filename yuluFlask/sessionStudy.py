@@ -18,3 +18,5 @@ def get_session():
 def del_session():
     session.pop('username')
     return 'session删除成功'
+if __name__=='__main__':
+    app.run()

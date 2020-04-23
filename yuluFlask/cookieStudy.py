@@ -24,3 +24,5 @@ def del_cookie():
     resp = make_response('delete_cookie')
     resp.delete_cookie('password')
     return resp
+if __name__=='__main__':
+    app.run()
